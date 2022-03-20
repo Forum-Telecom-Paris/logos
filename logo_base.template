@@ -1,0 +1,30 @@
+<svg viewBox="-65 -220 2500 2500" xmlns="http://www.w3.org/2000/svg">
+    <metadata xmlns="http://www.w3.org/2000/svg">
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <rdf:Description dc:title="Logo Forum Télécom Paris">
+                <dc:creator>
+                    <rdf:Bag>
+                        <rdf:li>Forum Télécom Paris</rdf:li>
+                    </rdf:Bag>
+                </dc:creator>
+            </rdf:Description>
+        </rdf:RDF>
+    </metadata>
+    <polygon fill="color-1" points="1055,0 800,148 1055,297 1312,148" />
+    <polygon fill="color-2" points="595,223 519,520 233,595 308,309" />
+    <polygon fill="color-3" points="149,800 0,1055 148,1312 297,1055" />
+    <polygon fill="color-1" points="234,1517 308,1803 595,1878 519,1592" />
+    <polygon fill="color-2" points="800,1964 1056,2111 1311,1964 1056,1815" />
+    <g font-family="Montserrat Semibold" fill="color-4" font-size="380">
+        <text x="745" y="745">
+            Forum
+        </text>
+        <text x="745" y="1188">
+            Télécom
+        </text>
+        <text x="745" y="1630">
+            Paris
+        </text>
+    </g>
+</svg>
