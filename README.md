@@ -11,12 +11,12 @@ Install the font `Montserrat SemiBold`
 - [https://fr.ffonts.net/Montserrat-SemiBold.font](https://fr.ffonts.net/Montserrat-SemiBold.font)
 - [https://github.com/JulietaUla/Montserrat](https://github.com/JulietaUla/Montserrat)
 
-Have `inkscape` and `convert` installed.
+Have `python3`, `inkscape` and `convert` installed.
 
-If you want, change size of the logo in the Makefile.
-
-Run commands :
+Run command :
 
 ```sh
 make
 ```
+
+> If you want, change size of the logo in the Makefile.
