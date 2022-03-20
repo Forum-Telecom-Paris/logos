@@ -31,8 +31,6 @@ logos_to_create = [
 
 name = "logo_base.template"
 
-
-a = logos_to_create[0]
 for one_logo in logos_to_create:
     with open(name, "r") as f:
         filedata = f.read()
