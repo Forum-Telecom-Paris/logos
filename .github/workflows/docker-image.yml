@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile -t docker-forum
+    - name: Run the Docker image
+      run: docker run -v "$(shell pwd)":/app docker-forum
+    - name: upload the file
+      uses: actions/upload-artifact@v2
+      with:
+        name: logos
+        path: ./logos/*
