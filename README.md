@@ -6,17 +6,27 @@ Never use the `logo_base.template` because it use a special font and it is a tem
 
 ## Create logos
 
-Install the font `Montserrat SemiBold`
+
+### Solution 1 - on your computer
+
+1. Install the font `Montserrat SemiBold`
 
 - [https://fr.ffonts.net/Montserrat-SemiBold.font](https://fr.ffonts.net/Montserrat-SemiBold.font)
 - [https://github.com/JulietaUla/Montserrat](https://github.com/JulietaUla/Montserrat)
+- [Available in the current repo](Montserrat-SemiBold.ttf)
 
-Have `python3`, `inkscape` and `convert` installed.
+2. Have `python3`, `inkscape` and `convert` installed.
 
-Run command :
+3. Run command :
 
 ```sh
 make
 ```
 
 > If you want, change size of the logo in the Makefile.
+
+### Solution 2 - with docker
+
+```
+docker build -t docker-forum . && docker run -v "$(pwd)":/app docker-forum
+```

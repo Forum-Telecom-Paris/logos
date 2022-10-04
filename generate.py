@@ -1,3 +1,9 @@
+#!/bin/python
+# -*- coding: utf-8 -*-
+"""_summary_
+logo generator
+"""
+
 logos_to_create = [
     {
         'name': 'logo_base.svg',
@@ -29,10 +35,10 @@ logos_to_create = [
     },
 ]
 
-name = "logo_base.template"
+NAME = "logo_base.template"
 
 for one_logo in logos_to_create:
-    with open(name, "r") as f:
+    with open(NAME, "r", encoding="utf-8") as f:
         filedata = f.read()
 
     filedata = filedata.replace('color-1', one_logo["color-1"])
@@ -40,5 +46,5 @@ for one_logo in logos_to_create:
     filedata = filedata.replace('color-3', one_logo["color-3"])
     filedata = filedata.replace('color-4', one_logo["color-4"])
 
-    with open(one_logo["name"], 'w') as file:
+    with open(one_logo["name"], 'w', encoding="utf-8") as file:
         file.write(filedata)
