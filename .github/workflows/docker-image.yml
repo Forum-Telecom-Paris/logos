@@ -14,7 +14,7 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile -t docker-forum
       - name: Run the Docker image
-        run: docker run -v "$(shell pwd)":/app docker-forum
+        run: docker run -v "$(pwd)":/app docker-forum
       - name: test
         run: pwd && ls -la
       - name: upload the file
