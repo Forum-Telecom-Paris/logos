@@ -6,4 +6,7 @@ COPY . /app
 
 WORKDIR /app
 
-CMD ["make", "all-docker"]
+RUN mkdir -p /usr/share/fonts/montserrat/
+RUN install -m644 Montserrat-SemiBold.ttf /usr/share/fonts/montserrat/
+
+CMD ["make"]

@@ -30,3 +30,11 @@ make
 ```
 docker build -t docker-forum . && docker run -v "$(pwd)":/app docker-forum
 ```
+
+### Solution 3 - with Github Actions
+
+- After each push, logos are built and are available as an artifact in the last action executed  [https://github.com/Forum-Telecom-Paris/logos/actions](https://github.com/Forum-Telecom-Paris/logos/actions)
+
+## LICENSE
+
+Note that the [Montserrat-SemiBold.ttf](Montserrat-SemiBold.ttf) has it own license
