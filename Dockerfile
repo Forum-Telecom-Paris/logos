@@ -1,6 +1,6 @@
-FROM debian
+FROM alpine
 
-RUN apt update && apt upgrade -y && apt install -y python3 inkscape imagemagick make curl
+RUN apk add python3 inkscape imagemagick make
 
 COPY . /app
 
