@@ -6,7 +6,6 @@ Never use the `logo_base.template` because it use a special font and it is a tem
 
 ## Create logos
 
-
 ### Solution 1 - on your computer
 
 1. Install the font `Montserrat SemiBold`
@@ -27,7 +26,7 @@ make
 
 ### Solution 2 - with docker
 
-```
+```sh
 docker build -t docker-forum . && docker run -v "$(pwd)":/app docker-forum
 ```
 
@@ -37,4 +36,5 @@ docker build -t docker-forum . && docker run -v "$(pwd)":/app docker-forum
 
 ## LICENSE
 
-Note that the [Montserrat-SemiBold.ttf](Montserrat-SemiBold.ttf) has it own license
+All rights reserved.
+Note that the [Montserrat-SemiBold.ttf](Montserrat-SemiBold.ttf) has it own license.
